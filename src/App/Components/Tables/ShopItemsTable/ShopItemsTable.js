@@ -34,7 +34,7 @@ const ShopItemsTable = (props) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {items ? items.map((row) => (
+            {items && items.length ? items.map((row) => (
               <TableRow key={row.name}>
                 <TableCell component="th" scope="row">
                   {row.name}

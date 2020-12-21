@@ -34,7 +34,7 @@ const ShopsTable = ({shops, onEdit, onView, onDelete}) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {shops ? shops.map((row) => (
+            {shops && shops.length ? shops.map((row) => (
               <TableRow key={row.name}>
                 <TableCell component="th" scope="row">
                   {row.name}
